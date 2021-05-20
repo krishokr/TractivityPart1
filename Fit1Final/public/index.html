@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Fitness tracker stage 1</title>
+	<link href="reset.css" rel="stylesheet" type="text/css" />
+	<link href="style.css" rel="stylesheet" type="text/css"/>
+  <script defer src="index.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+</head>
+
+<BODY>
+  <div class="headerContainer">
+    <h1 class="header">Fitness Log</h1>
+  </div>
+  <div class="welcomeContainer">
+    <p class="welcomeText">Welcome back, <br>Joey!</p>
+    <img class="welcomeImage" src="headerimage.png"/>
+  </div>
+  <p class="text">What activity session are you logging?</p>
+
+  <div class="activitiesContainer">
+    <p>Past Activity</p>
+    <div id="pastActivitiesContainer">
+      
+      <div id="hiddenPastActivities">    
+        <div id="dateInput">
+          <label for="date">Date</label>
+          <input type="date" id="date">
+        </div>
+        <div id="selectActivity">
+          <label for="Activity">Activity</label>
+          <select id="activity">
+            <option>Select an option</option>
+            <option>Climb</option>
+            <option>Run</option>
+            <option>Hike</option>
+            <option>Bike</option>
+            <option>Yoga</option>
+            <option>Ski</option>
+            <option>Walk</option>
+          </select>
+        </div>
+        <p id="hiddenP">for</p>
+        <div id="textInput1">
+          <label for="Time/Distance">Time/Distance</label>
+          <input type="number" step = "0.01" id="Time/Distance" name="Time/Distance">
+        </div>
+        <div id="textInput2">
+          <label for="Units">Units</label>
+          <input type="text" id="Units" name="Units" readonly="readonly">
+        </div>
+        <input type="submit" value="Submit" id="submit">
+      </div>
+      <button id="pastActivityBtn">Add New Activity</button>
+    </div>
+    <p>Future Plans</p>
+    <div id="futurePlansContainer">
+      <div id="hiddenFuturePlans">
+        <div id="dateInputFuture">
+          <label for="date">Date</label>
+          <input type="date" id="dateFuture">   
+        </div> 
+        <div id="selectActivityFuture">
+          <label for="Activity">Activity</label>
+          <select id="activityFuture">
+            <option>Select an option</option>
+            <option>Hike</option>
+            <option>Run</option>
+            <option>Climb</option>
+            <option>Bike</option>
+            <option>Yoga</option>
+            <option>Swim</option>
+            <option>Walk</option>
+          </select>
+        </div>
+        <input type="submit" value="Submit" id="submitFuture">
+      </div>   
+        <button id="futurePlansBtn">Add New Activity</button> 
+    </div> 
+  </div>
+</BODY>
+</html>
